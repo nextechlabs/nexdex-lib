@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap/pancake-swap-lib",
-  "version": "0.0.4",
-  "description": "Pancake Swap Lib",
+  "name": "@nextechlabs/nexdex-lib",
+  "version": "0.0.5",
+  "description": "NexDex Lib",
   "files": [
     "contracts",
     "!contracts/test"
   ],
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:pancakeswap/pancake-swap-lib.git"
+    "url": "ssh://git@github.com:nextechlabs/nexdex-lib.git"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
@@ -35,7 +35,7 @@
     "precompile": "rimraf ./build/",
     "compile": "waffle",
     "pretest": "yarn compile",
-    "test": "mocha",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider mocha",
     "prepublishOnly": "yarn test"
   },
   "license": "GPL-3.0-or-later"
