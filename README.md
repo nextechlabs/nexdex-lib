@@ -13,10 +13,10 @@ Run `yarn test` to execute the test suite.
 
 ## Usage
 
-Install this in another project via `yarn add @nextechlabs/nexdex-lib`
+Install this in another project via `yarn add @thenexlabs/nex-lib`
 
 Then import the contracts via:
 
 ```solidity
-import "@nextechlabs/nexdex-lib/contracts/access/Ownable.sol";
+import "@thenexlabs/nex-lib/contracts/access/Ownable.sol";
 ```

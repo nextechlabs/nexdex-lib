@@ -60,6 +60,6 @@ library Create2 {
         address deployer
     ) internal pure returns (address) {
         bytes32 _data = keccak256(abi.encodePacked(bytes1(0xff), deployer, salt, bytecodeHash));
-        return address(uint256(_data));
+        return address(uint160(uint256(_data)));
     }
 }

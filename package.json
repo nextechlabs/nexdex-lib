@@ -1,17 +1,18 @@
 {
-  "name": "@nextechlabs/nexdex-lib",
-  "version": "0.0.6",
-  "description": "NexDex Lib",
+  "name": "@thenexlabs/nex-lib",
+  "version": "0.0.2",
+  "description": "The NEX Lib",
   "files": [
     "contracts",
     "!contracts/test"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:nextechlabs/nexdex-lib.git"
-  },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "url": "ssh://git@github.com:thenexlabs/nex-lib.git"
   },
   "engines": {
     "node": ">=10"
@@ -25,7 +26,7 @@
     "prettier": "^2.0.4",
     "prettier-plugin-solidity": "^1.0.0-alpha.57",
     "rimraf": "^3.0.2",
-    "solc": "^0.6.12",
+    "solc": "^0.8.0",
     "ts-node": "^8.9.0",
     "typescript": "^3.8.3"
   },

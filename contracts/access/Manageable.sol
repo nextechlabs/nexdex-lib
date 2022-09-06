@@ -24,7 +24,7 @@ contract Manageable is Context {
     /**
      * @dev Initializes the contract setting the deployer as the initial manager.
      */
-    constructor() internal {
+    constructor() {
         address msgSender = _msgSender();
         _manager = msgSender;
         emit ManagementTransferred(address(0), msgSender);
